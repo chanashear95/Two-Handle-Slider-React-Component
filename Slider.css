@@ -1,0 +1,135 @@
+body {
+    text-align: center;
+}
+
+/* Slider */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 20%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: black;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background: black;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  display: inline-block;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: black;
+  border-radius: 1px;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background: black;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 20%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: black;
+  border-radius: 2px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: black;
+  border-radius: 2px;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background: black;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: black;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: black;
+}
+
+
+.slider { 
+  position: relative; 
+  width: 20%; 
+  height: 35px; 
+  text-align: center; 
+  margin: 0 auto;
+}
+
+ .slider input { 
+   pointer-events: none; 
+   position: absolute; 
+   left: 0; 
+   top: 15px; 
+   width: 100%; 
+   outline: none; 
+   height: 18px; 
+   margin: 0; 
+   padding: 0; 
+   border-radius: 8px; 
+  } 
+  
+  .slider input::-webkit-slider-thumb { 
+    pointer-events: all; 
+    position: relative; 
+    z-index: 1; 
+    outline: 0; 
+    -webkit-appearance: none;
+     height: 15px; 
+     width: 15px; 
+     border-radius: 12px; 
+     background-color: black; 
+     border: 2px solid black; 
+    } 
+
+    .label-container{
+      margin: 10px 0px 30px 0px;
+      width: 100%;
+        margin: 20px auto;
+    }
+
+    .slider-label{
+      font-size: 1.1rem;
+    }
+
+
+
+    
